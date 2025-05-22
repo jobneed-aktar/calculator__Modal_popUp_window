@@ -1,6 +1,123 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
+body {
+  background: url(./backg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: #0f0f10a6;
+  padding: 25px 10px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 320px;
+}
+
+#display {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: right;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: #000000;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#display:focus {
+  outline: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.btn {
+  padding: 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #e0e0e0;
+}
+
+.btn.operator {
+  background-color: #ffcc80;
+}
+
+.btn.operator:hover {
+  background-color: #ffb74d;
+}
+
+.btn.equal {
+  background-color: #4caf50;
+  color: white;
+  grid-column: span 1;
+}
+
+.btn.equal:hover {
+  background-color: #43a047;
+}
+
+.btn.clear {
+  background-color: #ef5350;
+  color: white;
+}
+
+.btn.clear:hover {
+  background-color: #e53935;
+}
+
+.btn.del {
+  background-color: #ff9800;
+  color: white;
+}
+
+.btn.del:hover {
+  background-color: #fb8c00;
+}
+
+.btn.percent {
+  background-color: #64b5f6;
+  color: white;
+}
+
+.btn.percent:hover {
+  background-color: #42a5f5;
+}
+
+.btn.zero {
+  grid-column: span 2;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
