@@ -3,4 +3,4 @@
 A simple and stylish calculator built with **HTML**, **CSS**, and **JavaScript**.
 
 🔗 ** Calculator Live Demo:**  
-[Click here to open the calculator](https://682e9f05cd7d6d8895a5e4f9--brilliant-fox-28a8a2.netlify.app/)
+[Click here to open the calculator](https://682eb1bc2ee7d0a2e3febd69--tourmaline-puffpuff-fb9b90.netlify.app/)
